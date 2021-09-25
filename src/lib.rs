@@ -1,4 +1,2 @@
 pub mod card;
-
-power: i32;
-
+pub mod deck;

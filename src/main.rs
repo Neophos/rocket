@@ -2,7 +2,8 @@
 
 #[macro_use] extern crate rocket;
 
-use card;
+mod card;
+mod deck;
 
 #[get("/")]
 fn game() -> String {
@@ -13,6 +14,7 @@ fn game() -> String {
 fn rocket() -> _ {
     rocket::build().mount("/", routes![game])
 }
+
 
 #[cfg(test)]
 mod test {
